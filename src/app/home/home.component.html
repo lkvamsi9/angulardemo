@@ -1,0 +1,16 @@
+<input type="button" value="getusernames" (click)="getalluser()">
+<table border="1">
+     <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+     </tr>
+        <tr *ngFor="let User of User">
+            <td>{{User.id}}</td>
+            <td>{{User.name}}</td>
+            <td>{{User.username}}</td>
+            <td>{{User.email}}</td>
+        </tr>
+
+</table>
